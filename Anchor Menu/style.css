@@ -16,8 +16,3 @@ nav{
 nav a:hover{
     color: black;
 }
-
-
-.active-menu-item{
-    color: white;
-}
