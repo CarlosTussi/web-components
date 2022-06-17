@@ -20,17 +20,20 @@ document.addEventListener('scroll', () => {
     //General case to check for the position
     for(var i = 0; i <= nav_sections.length-2; i++)
     {       
-        if(window.pageYOffset + SCROLL_EXTRA_OFFSET  >= nav_sections[i].getBoundingClientRect().y + window.pageYOffset&&
-        window.pageYOffset + SCROLL_EXTRA_OFFSET < nav_sections[i+1].getBoundingClientRect().y + window.pageYOffset)
+        if(window.pageYOffset + SCROLL_EXTRA_OFFSET  >= nav_sections[i].getBoundingClientRect().y + window.pageYOffset &&
+            window.pageYOffset + SCROLL_EXTRA_OFFSET < nav_sections[i+1].getBoundingClientRect().y + window.pageYOffset)
         {
             highlightNavItem(i);
         }        
     }
     //Case for the last element of the navigation item's list
     if(i == nav_sections.length -1)
-        if(window.pageYOffset + SCROLL_EXTRA_OFFSET  >= nav_sections[i].getBoundingClientRect().y + window.pageYOffset){
+    {
+        if(window.pageYOffset + SCROLL_EXTRA_OFFSET  >= nav_sections[i].getBoundingClientRect().y + window.pageYOffset)
+        {
              highlightNavItem(i);
-}
+        }
+    }
 });
 
 /************************************************************************************************************/
