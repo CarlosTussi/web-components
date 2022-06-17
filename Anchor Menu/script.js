@@ -9,7 +9,10 @@ var nav_sections = document.querySelectorAll('h2');
 /*****************************************CUSTOMIZATION SECTION**********************************************/
 /************************************************************************************************************/
 
-
+//This constant adds extra Y offset to the scroll so that the navigation link is highlighted when clicked. 
+//Without this offset, if the menu is clicked from the navigation bar, it does not highlight until page is scrolled a bit
+//further down.
+const SCROLL_EXTRA_OFFSET = 10;
 //It can be replaced with nav_sections[i].getBoundingClientRect().y with the corrected scroll adjusted with (window.pageYOffset)
 var nav_sections_position = [];
 
@@ -25,15 +28,15 @@ document.addEventListener('scroll', () => {
     //General case to check for the position
     for(var i = 0; i <= nav_sections_position.length-2; i++)
     {       
-        if(window.pageYOffset >= nav_sections_position[i] &&
-        window.pageYOffset < nav_sections_position[i+1])
+        if(window.pageYOffset + SCROLL_EXTRA_OFFSET  >= nav_sections_position[i] &&
+        window.pageYOffset + SCROLL_EXTRA_OFFSET < nav_sections_position[i+1])
         {
             highlightNavItem(i);
         }        
     }
     //Case for the last element of the navigation item's list
     if(i == nav_sections_position.length -1)
-        if(window.pageYOffset >= nav_sections_position[i]){
+        if(window.pageYOffset + SCROLL_EXTRA_OFFSET  >= nav_sections_position[i]){
              highlightNavItem(i);
 }
 });
