@@ -1,0 +1,23 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav{
+    position: fixed;
+}
+
+
+nav a:hover{
+    color: black;
+}
+
+
+.active-menu-item{
+    color: white;
+}
