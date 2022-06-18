@@ -1,0 +1,56 @@
+/* 
+- Option 1:
+    - Square in the middle with the cookie message and accept button
+    - Background is transparent dark    
+    - After press Accept, square and message are gone
+*/
+
+/* 
+- Option 2: 
+    - Pop up bar at the bottom of the page, fixed so it moves with the scroll
+    - Bar disappear after pressing Accept
+*/
+
+
+body{
+    margin: 0;
+
+}
+
+main {
+    margin: 10px;
+}
+
+.cookie-bar{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    
+}
+
+.cookie-bar-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: black;
+}
+
+.cookie-bar-content p{
+    text-align: center;
+    margin: auto;
+}
+
+.cookie-bar-content div{
+    text-align: center;
+    margin: auto;
+}
+
+.cookie-bar-content button{
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 5px;
+}
