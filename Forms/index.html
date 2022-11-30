@@ -109,7 +109,7 @@
             </form>                       
         </section>
         <section class="text-center">
-            <h2>Another Form</h2>
+            <h2>type="date" + type="rage" + type="reset"</h2>
             <form method="post" action="/absolute_path">
                 <div>
                     <label for="booking_date">Booking Date</label> 
@@ -134,6 +134,23 @@
                 </div>
             </form>
         </section>
+        <secition class="text-center">
+            <h2>Using type="range" and &lt;datalist&gt; with &lt;options&gt;</h2>
+                <form>
+                    <div>
+                      <label for="rating">Rating</label>
+                      <input type="range" id="rating" name="rating" min="1" max="5" list="ratings">
+                      <datalist id="ratings">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </datalist>
+                    </div>
+                    <button type="submit">Submit Rating</button>
+                  </form>
+        </secition>
     </main>
     <footer>
         <!-- Copyright and other footeer content -->
