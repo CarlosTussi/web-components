@@ -1,0 +1,100 @@
+/* NO FLEXBOX */
+.elem{
+    border: 1px solid aliceblue;
+    background-color: bisque;
+    margin: 5px;
+}
+
+/* BASIC FLEXBOX */
+.flexbox-container{
+    display: flex;
+}
+
+.box{
+    border: 1px solid aliceblue;
+    background-color: greenyellow;
+    margin: 5px;
+}
+
+/* VERTICAL FLEXBOX CONTAINER */
+.vertical-flexbox-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.vbox{
+    border: 1px solid aliceblue;
+    background-color: rosybrown;
+    margin: 5px;
+}
+
+/* ALIGNMENT PROPERTIES */
+/* 
+justify-content: alignment of items on the main axis (Make sense only for horizontal flex elements)
+align-items: aligment of items on the cross axis (Make sense only for vertical flex elements)
+
+*/
+/* HORIZONTAL */
+.flex-alignment-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* 
+    (Same effect as gap:30px)
+    row-gap: 30px;
+    column-gap: 30px 
+    */ 
+
+}
+
+.abox{
+    border: 1px solid aliceblue;
+    background-color: burlywood;
+    margin: 5px;
+}
+
+/* VERTICAL */
+.vertical-flex-alignment-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.vabox{
+    border: 1px solid aliceblue;
+    background-color: olivedrab;
+    margin: 5px;
+}
+
+.vabox3{
+    align-self: center;
+}
+
+/* Flex-grow | Flex-shrink | Flex-basis  */
+/* 
+    Flex-grow: How much the item will grow compared to the flexible items
+    Flex-shrink: How much the item will shrink compared to the flexible items
+    Flex-basis: The length of the item. Legal values: "auto", "inherit", or a number followed by "%", "px", "em" or any other length unit
+*/
+.gsb-flex-container{
+    display: flex;
+}
+
+.gsb{
+    border: 1px solid aliceblue;
+    background-color: goldenrod;
+    margin: 5px;
+}
+
+.gsb4{
+    background-color: blanchedalmond;
+    /* Element will take the entire free space because it has flex-grow: 1 */
+    flex: 1 1 auto;
+}
+
+.gsb3{
+    background-color: blue;
+    flex: 2 1 auto;
+}
