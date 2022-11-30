@@ -83,32 +83,34 @@
         </section>]
         <section class="text-center">
             <h2>Radio Buttons</h2>
-            <!-- <fieldset> defines a group for the radio buttons -->
-            <!-- Wrapping around <label></label> for responsive design. Will allor user to clip on the text while selecting an option on a mobile screen -->
-            <fieldset id="size">
-                <label>
-                    <input type="radio" value="2" name="size"> 2 person table
-                </label>
-                <label>
-                    <input type="radio" value="4" name="size" checked> 4 person table
-                </label>
-                <label>
-                    <input type="radio" value="6" name="size"> 6 person table
-                </label>
-            </fieldset>
-            <fieldset id="location">
-                <label>
-                    <input type="radio" value="indoors" name="location" checked> Indoors
-                </label>
-                <label>
-                    <input type="radio" value="outdoors" name="location"> Outdoors
-                </label>
-            </fieldset>
-            <button type="submit">Book Table</button>
+            <form method="get" action="relative_path">
+                <!-- <fieldset> defines a group for the radio buttons -->
+                <!-- Wrapping around <label></label> for responsive design. Will allor user to clip on the text while selecting an option on a mobile screen -->
+                <fieldset id="size">
+                    <label>
+                        <input type="radio" value="2" name="size"> 2 person table
+                    </label>
+                    <label>
+                        <input type="radio" value="4" name="size" checked> 4 person table
+                    </label>
+                    <label>
+                        <input type="radio" value="6" name="size"> 6 person table
+                    </label>
+                </fieldset>
+                <fieldset id="location">
+                    <label>
+                        <input type="radio" value="indoors" name="location" checked> Indoors
+                    </label>
+                    <label>
+                        <input type="radio" value="outdoors" name="location"> Outdoors
+                    </label>
+                </fieldset>
+                <button type="submit">Book Table</button>
+            </form>                       
         </section>
         <section class="text-center">
             <h2>Another Form</h2>
-            <form>
+            <form method="post" action="/absolute_path">
                 <div>
                     <label for="booking_date">Booking Date</label> 
                     <input type="date" id="booking_date" name="booking_date">
