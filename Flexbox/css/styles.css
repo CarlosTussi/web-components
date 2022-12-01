@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* NO FLEXBOX */
 .elem{
     border: 1px solid aliceblue;
@@ -7,7 +12,7 @@
 
 /* BASIC FLEXBOX */
 .flexbox-container{
-    display: flex;
+    display: flex;        
 }
 
 .box{
@@ -32,6 +37,7 @@
 /* ALIGNMENT PROPERTIES */
 /* 
 justify-content: alignment of items on the main axis (Make sense only for horizontal flex elements)
+    center, stretch, space-evenly, ...
 align-items: aligment of items on the cross axis (Make sense only for vertical flex elements)
 
 */
