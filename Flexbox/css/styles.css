@@ -19,7 +19,36 @@
     border: 1px solid aliceblue;
     background-color: greenyellow;
     margin: 5px;
+    text-align: center;
+    /* Both properties bellow will produce the same result => All the flex elements will ocupy the same space and will filll the whole line */
+    /* flex-basis: 100%;
+    flex: 1; */
 }
+
+/* If there's a need to specify different sizes for  different flex elements*/
+.box1{
+    flex-basis: 15%;
+}
+
+.box2{
+    flex-basis: 10%;
+}
+
+
+.box3{
+    flex-basis: 25%;
+}
+
+
+.box4{
+    flex-basis: 40%;
+}
+
+
+.box5{
+    flex-basis: 10%;
+}
+
 
 /* VERTICAL FLEXBOX CONTAINER */
 .vertical-flexbox-container{
