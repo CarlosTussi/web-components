@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    /* grid-template-rows: 100px 1fr 100px; */
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 1/ span 12;
+}
+
+/* Not using 'span' on grid-column
+grid-column: 1/8
+and then
+grid-column: 8/13
+*/
+.header-one-class{
+    background-color: aqua;
+    grid-column: 1/8;
+}
+
+.header-two-class{
+    background-color: blue;
+    grid-column: 8/ 13;
+}
+
+main{
+    background-color: orange;
+    grid-column: 1/ span 12;
+}
+
+footer{
+    background-color: yellowgreen;
+    grid-column: 1/ span 12;
+}
+
