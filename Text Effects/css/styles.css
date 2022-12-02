@@ -1,0 +1,31 @@
+.text{
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 500px;
+}
+
+.text:hover{
+    overflow: visible;
+}
+
+h3{
+    writing-mode: vertical-lr;
+}
+
+h3 + h3{
+    writing-mode: vertical-rl;
+    color: pink;
+}
+
+h3 + h3 + p{
+    width: 50px;
+    word-wrap: break-word;
+}
+
+/* Can add as many as I want */
+h1{
+    text-shadow: 0 0 30px green,
+                 0 0 5px tomato,
+                0 0 20px pink;
+}
