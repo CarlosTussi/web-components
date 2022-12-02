@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-areas:    "my_header my_header"
+                            "my_nav my_main"
+                            "my_footer my_footer";
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-columns: 20vw 80vw;
+}
+
+header{
+    grid-area: my_header;
+    background-color: tomato;
+}
+
+nav{
+    grid-area: my_nav;
+    background-color: violet;
+}
+
+main{
+    grid-area: my_ main;
+    background-color: steelblue;
+}
+
+footer{
+    grid-area: my_footer;
+    background-color: silver;
+}
+
