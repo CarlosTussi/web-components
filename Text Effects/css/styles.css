@@ -29,3 +29,18 @@ h1{
                  0 0 5px tomato,
                 0 0 20px pink;
 }
+
+/* First letters capita */
+.capitalize{
+    text-transform: capitalize;
+}
+
+/* All capital */
+.upper{
+    text-transform: uppercase;
+}
+
+/* All lower case */
+.lower{
+    text-transform: lowercase;
+}
