@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+/* 
+TRANSITION shorthand properties
+
+transition-property
+
+transition-duration
+
+transition-timing-function
+
+transition-delay */
 
 .container{
     display: grid;
