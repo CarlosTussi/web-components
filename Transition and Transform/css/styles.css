@@ -87,3 +87,42 @@
     background-color: greenyellow;
     transition: 1s;
 } */
+
+.hello-world-parent{
+    margin-top: 100px;
+}
+
+.hello-text{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.hello-text p{
+    background-color: tomato;
+    margin: 5px;
+    padding-top: 10px;
+    width: 60px;
+    height: 50px;
+
+
+    font-size:xx-large;
+    text-align: center;
+    text-transform: uppercase;
+    color:darkblue;
+
+    border: 3px dotted black;
+    border-radius: 15px;
+}
+
+.hello-text:hover p:nth-child(odd)
+{
+    transform: rotateX(360deg);
+    transition: 1.5s;
+}
+
+.hello-text:hover p:nth-child(even)
+{
+    transform: rotateZ(360deg);
+    transition: 1s;
+}
