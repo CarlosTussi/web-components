@@ -33,6 +33,8 @@ import LeftBox from './components/LeftBox';
 import RightBox from './components/RightBox';
 import BoxInput from './components/BoxInput';
 
+import Gift from './components/Gift';
+import Fetching from './components/Fetching';
 
 const desserts = [
   {
@@ -91,6 +93,11 @@ function App() {
 
   return(  
     <div className="App">
+    
+    <Fetching />
+
+    <Gift />
+
 
     <BoxProvider>
       <LeftBox style={{paddingRight: "2em"}} />      
