@@ -36,6 +36,13 @@ import BoxInput from './components/BoxInput';
 import Gift from './components/Gift';
 import Fetching from './components/Fetching';
 
+import ChakraUI from './components/ChakraUI';
+
+import ContainmentComponent from './components/ContainmentComponent';
+import SpecializedComponent from './components/SpecializedComponent';
+
+import MouseMain from './components/MouseMain';
+
 const desserts = [
   {
     name: "Chocolate Cake",
@@ -77,10 +84,6 @@ const listElements = [
     name:'Leite'
   }
 ];
-
-
-
-
 function App() {
 
   const [fruits] = useState([
@@ -94,7 +97,17 @@ function App() {
   return(  
     <div className="App">
     
-    <Fetching />
+    <MouseMain />
+
+    <ContainmentComponent>
+      <h3>A H3 heading</h3>
+    </ContainmentComponent>
+    <br/>
+    <SpecializedComponent/>
+
+    {/* <ChakraUI /> */}
+
+     <Fetching />
 
     <Gift />
 
@@ -142,7 +155,6 @@ function App() {
     {listElements.map((elem) => {
       return <Many key={elem.id} element={elem.name}/>
     })}
-
     </div>
   );
 }
