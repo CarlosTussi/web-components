@@ -1,0 +1,66 @@
+ul {
+  list-style: none;
+  background-color: navy;
+}
+ul li {
+  color: white;
+  background-color: tomato;
+}
+
+.interpolation-section {
+  border: 0.5em dotted tomato;
+  color: black;
+  text-align: center;
+}
+
+footer, header {
+  margin: 1em 2em;
+}
+
+header {
+  background-color: navy;
+  color: aliceblue;
+  height: 5vh;
+}
+
+main {
+  background-color: #6AB547;
+  color: #D8829D;
+  height: 50vh;
+  width: 62.5vh;
+}
+
+footer {
+  background-color: #D8829D;
+  color: #6AB547;
+  height: 10vh;
+}
+
+button {
+  display: block;
+  margin: 0 auto 0 auto;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+}
+button:hover {
+  background-color: navy;
+}
+
+.l1 {
+  color: cyan;
+}
+
+.l2 {
+  color: cyan;
+}
+
+.l3 {
+  color: cyan;
+}
+
+.l4 {
+  color: cyan;
+}
+
+/*# sourceMappingURL=styles.css.map */
