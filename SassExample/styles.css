@@ -42,4 +42,28 @@ a, a:visited, a:active {
   --text-color: black;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 40px;
+  width: min(100% - 40px, 1000px);
+  margin-inline: auto;
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+.grid__main, .grid__sidebar {
+  padding: 40px;
+}
+.grid__main {
+  background-color: blue;
+}
+.grid__sidebar {
+  background-color: magenta;
+}
+
 /*# sourceMappingURL=styles.css.map */
