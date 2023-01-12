@@ -116,3 +116,12 @@ button[disabled] {
   color: #666666;
   cursor: not-allowed;
 }
+
+
+.containmentComponent{
+  background-color: tomato;
+  color: white;
+  height: 20vh;
+  width: 15vw;
+  margin: 0 auto 0 auto;
+}

@@ -42,6 +42,7 @@ import ContainmentComponent from './components/ContainmentComponent';
 import SpecializedComponent from './components/SpecializedComponent';
 
 import MouseMain from './components/MouseMain';
+import MyButton from './components/MyButton';
 
 const desserts = [
   {
@@ -97,7 +98,9 @@ function App() {
   return(  
     <div className="App">
     
-    <MouseMain />
+    <MyButton onClick={() => console.log("AppClick")}>Submit</MyButton>;
+
+    {/* <MouseMain /> */}
 
     <ContainmentComponent>
       <h3>A H3 heading</h3>

@@ -61,9 +61,8 @@ function MouseMain()
 {
     return (
         <div>
-          <header className="Header">Little Lemon Restaurant 🍕</header>
+          <header className="">Restaurant</header>
           <PanelMouseLogger />
-          <p>Testing</p>
           <PointMouseLogger />
         </div>
       );
