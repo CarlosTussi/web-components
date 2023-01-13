@@ -1,20 +1,21 @@
+@use '../utils' as u;
 .grid{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     gap: 40px;    
 
-    width: min(100% - 40px, 1000px); //Will select the smallest value. This means the screen won't be more than 1000px because that will be the maximum size and if it's a mobile viewport, then it will be 100% of that window, which will be obviously smaller than 1000px. -40px is to add a bit of space between the border
+    width: min(100% - u.rem(40), u.rem(1000)); //Will select the smallest value. This means the screen won't be more than 1000px because that will be the maximum size and if it's a mobile viewport, then it will be 100% of that window, which will be obviously smaller than 1000px. -40px is to add a bit of space between the border
     margin-inline: auto; //(!!!!) margin-inline = margin: 0 auto; but the benefit is we don't have to define margin bottom and top to 0 now.Will make sure they are center for very large screens as well
 
-    @media (min-width: 900px){
+    @include u.breakpoint(large){
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto;
     }
 
     &__main,
     &__sidebar{
-        padding: 40px;
+        padding: u.rem(40);
     }
 
     &__main{
@@ -22,7 +23,11 @@
     }
 
     &__sidebar{
-        background-color: magenta;
+        background-color: magenta;        
+
+        @include u.breakpoint-down(medium){
+            text-align: center;
+        }
 
     }
 }
