@@ -50,22 +50,22 @@ $max-width: 1180px !default;
 
 
 
-/// Breakpoints-up map
+// Breakpoints-up map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints-up: (
-  'medium': rem(700),
-  'large': rem(900),
-  'xlarge': rem(1440),
+  'medium': 43.75rem,
+  'large': 56.25rem,
+  'xlarge': 90rem,
 ) !default;
 
 /// Breakpoints-down map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints-down: (
-  'small': rem(699.98),
-  'medium': rem(899.98),
-  'large': rem(1439.98),
+  'small': 43.74875rem,
+  'medium': 56.24875,
+  'large': 89.99875rem,
 ) !default;
 
 
